@@ -2,9 +2,9 @@
 // versions:
 // - protoc-gen-go-grpc v1.2.0
 // - protoc             v3.21.12
-// source: Course-Service/course.proto
+// source: Course/course.proto
 
-package course
+package Course
 
 import (
 	context "context"
@@ -789,5 +789,5 @@ var CourseService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "Course-Service/course.proto",
+	Metadata: "Course/course.proto",
 }

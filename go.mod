@@ -1,4 +1,4 @@
-module github.com/hoangphuc28/CoursesOnline/Proto
+module github.com/hoangphuc28/CoursesOnline-ProtoFile
 
 go 1.20
 

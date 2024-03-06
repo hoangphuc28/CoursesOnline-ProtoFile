@@ -2,13 +2,13 @@
 // versions:
 // 	protoc-gen-go v1.28.1
 // 	protoc        v3.21.12
-// source: Course-Service/course.proto
+// source: Course/course.proto
 
-package course
+package Course
 
 import (
-	User_Service "github.com/hoangphuc28/CoursesOnline/Proto/User-Service"
-	Error "github.com/hoangphuc28/CoursesOnline/Proto/v1.1/Error"
+	Error "github.com/hoangphuc28/CoursesOnline-ProtoFile/Error"
+	User "github.com/hoangphuc28/CoursesOnline-ProtoFile/User"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -34,7 +34,7 @@ type CheckOwnerRequest struct {
 func (x *CheckOwnerRequest) Reset() {
 	*x = CheckOwnerRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[0]
+		mi := &file_Course_course_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -47,7 +47,7 @@ func (x *CheckOwnerRequest) String() string {
 func (*CheckOwnerRequest) ProtoMessage() {}
 
 func (x *CheckOwnerRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[0]
+	mi := &file_Course_course_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -60,7 +60,7 @@ func (x *CheckOwnerRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CheckOwnerRequest.ProtoReflect.Descriptor instead.
 func (*CheckOwnerRequest) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{0}
+	return file_Course_course_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *CheckOwnerRequest) GetUserId() string {
@@ -88,7 +88,7 @@ type DeleteLectureRequest struct {
 func (x *DeleteLectureRequest) Reset() {
 	*x = DeleteLectureRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[1]
+		mi := &file_Course_course_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -101,7 +101,7 @@ func (x *DeleteLectureRequest) String() string {
 func (*DeleteLectureRequest) ProtoMessage() {}
 
 func (x *DeleteLectureRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[1]
+	mi := &file_Course_course_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -114,7 +114,7 @@ func (x *DeleteLectureRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DeleteLectureRequest.ProtoReflect.Descriptor instead.
 func (*DeleteLectureRequest) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{1}
+	return file_Course_course_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *DeleteLectureRequest) GetLectureId() string {
@@ -138,7 +138,7 @@ type UpdateLectureRequest struct {
 func (x *UpdateLectureRequest) Reset() {
 	*x = UpdateLectureRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[2]
+		mi := &file_Course_course_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -151,7 +151,7 @@ func (x *UpdateLectureRequest) String() string {
 func (*UpdateLectureRequest) ProtoMessage() {}
 
 func (x *UpdateLectureRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[2]
+	mi := &file_Course_course_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -164,7 +164,7 @@ func (x *UpdateLectureRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateLectureRequest.ProtoReflect.Descriptor instead.
 func (*UpdateLectureRequest) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{2}
+	return file_Course_course_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *UpdateLectureRequest) GetLectureId() string {
@@ -208,7 +208,7 @@ type CreateLectureRequest struct {
 func (x *CreateLectureRequest) Reset() {
 	*x = CreateLectureRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[3]
+		mi := &file_Course_course_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -221,7 +221,7 @@ func (x *CreateLectureRequest) String() string {
 func (*CreateLectureRequest) ProtoMessage() {}
 
 func (x *CreateLectureRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[3]
+	mi := &file_Course_course_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -234,7 +234,7 @@ func (x *CreateLectureRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateLectureRequest.ProtoReflect.Descriptor instead.
 func (*CreateLectureRequest) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{3}
+	return file_Course_course_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *CreateLectureRequest) GetSectionId() string {
@@ -270,7 +270,7 @@ type CreateLectureResponse struct {
 func (x *CreateLectureResponse) Reset() {
 	*x = CreateLectureResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[4]
+		mi := &file_Course_course_proto_msgTypes[4]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -283,7 +283,7 @@ func (x *CreateLectureResponse) String() string {
 func (*CreateLectureResponse) ProtoMessage() {}
 
 func (x *CreateLectureResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[4]
+	mi := &file_Course_course_proto_msgTypes[4]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -296,7 +296,7 @@ func (x *CreateLectureResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateLectureResponse.ProtoReflect.Descriptor instead.
 func (*CreateLectureResponse) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{4}
+	return file_Course_course_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *CreateLectureResponse) GetLectureId() string {
@@ -324,7 +324,7 @@ type GetSectionsRequest struct {
 func (x *GetSectionsRequest) Reset() {
 	*x = GetSectionsRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[5]
+		mi := &file_Course_course_proto_msgTypes[5]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -337,7 +337,7 @@ func (x *GetSectionsRequest) String() string {
 func (*GetSectionsRequest) ProtoMessage() {}
 
 func (x *GetSectionsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[5]
+	mi := &file_Course_course_proto_msgTypes[5]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -350,7 +350,7 @@ func (x *GetSectionsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetSectionsRequest.ProtoReflect.Descriptor instead.
 func (*GetSectionsRequest) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{5}
+	return file_Course_course_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *GetSectionsRequest) GetCourseId() string {
@@ -372,7 +372,7 @@ type GetSectionsResponse struct {
 func (x *GetSectionsResponse) Reset() {
 	*x = GetSectionsResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[6]
+		mi := &file_Course_course_proto_msgTypes[6]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -385,7 +385,7 @@ func (x *GetSectionsResponse) String() string {
 func (*GetSectionsResponse) ProtoMessage() {}
 
 func (x *GetSectionsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[6]
+	mi := &file_Course_course_proto_msgTypes[6]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -398,7 +398,7 @@ func (x *GetSectionsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetSectionsResponse.ProtoReflect.Descriptor instead.
 func (*GetSectionsResponse) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{6}
+	return file_Course_course_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *GetSectionsResponse) GetSections() []*Section {
@@ -426,7 +426,7 @@ type DeleteSectionRequest struct {
 func (x *DeleteSectionRequest) Reset() {
 	*x = DeleteSectionRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[7]
+		mi := &file_Course_course_proto_msgTypes[7]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -439,7 +439,7 @@ func (x *DeleteSectionRequest) String() string {
 func (*DeleteSectionRequest) ProtoMessage() {}
 
 func (x *DeleteSectionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[7]
+	mi := &file_Course_course_proto_msgTypes[7]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -452,7 +452,7 @@ func (x *DeleteSectionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DeleteSectionRequest.ProtoReflect.Descriptor instead.
 func (*DeleteSectionRequest) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{7}
+	return file_Course_course_proto_rawDescGZIP(), []int{7}
 }
 
 func (x *DeleteSectionRequest) GetSectionId() string {
@@ -474,7 +474,7 @@ type UpdateSectionRequest struct {
 func (x *UpdateSectionRequest) Reset() {
 	*x = UpdateSectionRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[8]
+		mi := &file_Course_course_proto_msgTypes[8]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -487,7 +487,7 @@ func (x *UpdateSectionRequest) String() string {
 func (*UpdateSectionRequest) ProtoMessage() {}
 
 func (x *UpdateSectionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[8]
+	mi := &file_Course_course_proto_msgTypes[8]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -500,7 +500,7 @@ func (x *UpdateSectionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateSectionRequest.ProtoReflect.Descriptor instead.
 func (*UpdateSectionRequest) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{8}
+	return file_Course_course_proto_rawDescGZIP(), []int{8}
 }
 
 func (x *UpdateSectionRequest) GetSectionId() string {
@@ -529,7 +529,7 @@ type CreateSectionRequest struct {
 func (x *CreateSectionRequest) Reset() {
 	*x = CreateSectionRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[9]
+		mi := &file_Course_course_proto_msgTypes[9]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -542,7 +542,7 @@ func (x *CreateSectionRequest) String() string {
 func (*CreateSectionRequest) ProtoMessage() {}
 
 func (x *CreateSectionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[9]
+	mi := &file_Course_course_proto_msgTypes[9]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -555,7 +555,7 @@ func (x *CreateSectionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateSectionRequest.ProtoReflect.Descriptor instead.
 func (*CreateSectionRequest) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{9}
+	return file_Course_course_proto_rawDescGZIP(), []int{9}
 }
 
 func (x *CreateSectionRequest) GetCourseId() string {
@@ -584,7 +584,7 @@ type CreateSectionResponse struct {
 func (x *CreateSectionResponse) Reset() {
 	*x = CreateSectionResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[10]
+		mi := &file_Course_course_proto_msgTypes[10]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -597,7 +597,7 @@ func (x *CreateSectionResponse) String() string {
 func (*CreateSectionResponse) ProtoMessage() {}
 
 func (x *CreateSectionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[10]
+	mi := &file_Course_course_proto_msgTypes[10]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -610,7 +610,7 @@ func (x *CreateSectionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateSectionResponse.ProtoReflect.Descriptor instead.
 func (*CreateSectionResponse) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{10}
+	return file_Course_course_proto_rawDescGZIP(), []int{10}
 }
 
 func (x *CreateSectionResponse) GetSectionId() string {
@@ -638,7 +638,7 @@ type Response struct {
 func (x *Response) Reset() {
 	*x = Response{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[11]
+		mi := &file_Course_course_proto_msgTypes[11]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -651,7 +651,7 @@ func (x *Response) String() string {
 func (*Response) ProtoMessage() {}
 
 func (x *Response) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[11]
+	mi := &file_Course_course_proto_msgTypes[11]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -664,7 +664,7 @@ func (x *Response) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Response.ProtoReflect.Descriptor instead.
 func (*Response) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{11}
+	return file_Course_course_proto_rawDescGZIP(), []int{11}
 }
 
 func (x *Response) GetError() *Error.ErrorResponse {
@@ -687,7 +687,7 @@ type Image struct {
 func (x *Image) Reset() {
 	*x = Image{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[12]
+		mi := &file_Course_course_proto_msgTypes[12]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -700,7 +700,7 @@ func (x *Image) String() string {
 func (*Image) ProtoMessage() {}
 
 func (x *Image) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[12]
+	mi := &file_Course_course_proto_msgTypes[12]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -713,7 +713,7 @@ func (x *Image) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Image.ProtoReflect.Descriptor instead.
 func (*Image) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{12}
+	return file_Course_course_proto_rawDescGZIP(), []int{12}
 }
 
 func (x *Image) GetUrl() string {
@@ -749,7 +749,7 @@ type Resource struct {
 func (x *Resource) Reset() {
 	*x = Resource{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[13]
+		mi := &file_Course_course_proto_msgTypes[13]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -762,7 +762,7 @@ func (x *Resource) String() string {
 func (*Resource) ProtoMessage() {}
 
 func (x *Resource) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[13]
+	mi := &file_Course_course_proto_msgTypes[13]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -775,7 +775,7 @@ func (x *Resource) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Resource.ProtoReflect.Descriptor instead.
 func (*Resource) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{13}
+	return file_Course_course_proto_rawDescGZIP(), []int{13}
 }
 
 func (x *Resource) GetUrl() string {
@@ -807,7 +807,7 @@ type Lecture struct {
 func (x *Lecture) Reset() {
 	*x = Lecture{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[14]
+		mi := &file_Course_course_proto_msgTypes[14]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -820,7 +820,7 @@ func (x *Lecture) String() string {
 func (*Lecture) ProtoMessage() {}
 
 func (x *Lecture) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[14]
+	mi := &file_Course_course_proto_msgTypes[14]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -833,7 +833,7 @@ func (x *Lecture) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Lecture.ProtoReflect.Descriptor instead.
 func (*Lecture) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{14}
+	return file_Course_course_proto_rawDescGZIP(), []int{14}
 }
 
 func (x *Lecture) GetId() string {
@@ -885,7 +885,7 @@ type Section struct {
 func (x *Section) Reset() {
 	*x = Section{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[15]
+		mi := &file_Course_course_proto_msgTypes[15]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -898,7 +898,7 @@ func (x *Section) String() string {
 func (*Section) ProtoMessage() {}
 
 func (x *Section) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[15]
+	mi := &file_Course_course_proto_msgTypes[15]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -911,7 +911,7 @@ func (x *Section) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Section.ProtoReflect.Descriptor instead.
 func (*Section) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{15}
+	return file_Course_course_proto_rawDescGZIP(), []int{15}
 }
 
 func (x *Section) GetId() string {
@@ -953,7 +953,7 @@ type Goal struct {
 func (x *Goal) Reset() {
 	*x = Goal{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[16]
+		mi := &file_Course_course_proto_msgTypes[16]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -966,7 +966,7 @@ func (x *Goal) String() string {
 func (*Goal) ProtoMessage() {}
 
 func (x *Goal) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[16]
+	mi := &file_Course_course_proto_msgTypes[16]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -979,7 +979,7 @@ func (x *Goal) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Goal.ProtoReflect.Descriptor instead.
 func (*Goal) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{16}
+	return file_Course_course_proto_rawDescGZIP(), []int{16}
 }
 
 func (x *Goal) GetContent() string {
@@ -994,31 +994,31 @@ type Course struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Id            string                   `protobuf:"bytes,1,opt,name=id,proto3" json:"id,omitempty"`
-	Title         string                   `protobuf:"bytes,2,opt,name=title,proto3" json:"title,omitempty"`
-	SubCategory   string                   `protobuf:"bytes,3,opt,name=SubCategory,proto3" json:"SubCategory,omitempty"`
-	Goals         []*Goal                  `protobuf:"bytes,4,rep,name=goals,proto3" json:"goals,omitempty"`
-	Requirement   string                   `protobuf:"bytes,5,opt,name=requirement,proto3" json:"requirement,omitempty"`
-	Level         string                   `protobuf:"bytes,6,opt,name=level,proto3" json:"level,omitempty"`
-	Sections      []*Section               `protobuf:"bytes,7,rep,name=sections,proto3" json:"sections,omitempty"`
-	Description   string                   `protobuf:"bytes,8,opt,name=description,proto3" json:"description,omitempty"`
-	Language      string                   `protobuf:"bytes,9,opt,name=language,proto3" json:"language,omitempty"`
-	IsPublish     bool                     `protobuf:"varint,10,opt,name=isPublish,proto3" json:"isPublish,omitempty"`
-	Discount      *Coupon                  `protobuf:"bytes,11,opt,name=discount,proto3" json:"discount,omitempty"`
-	Price         *Price                   `protobuf:"bytes,12,opt,name=price,proto3" json:"price,omitempty"`
-	TotalSections int32                    `protobuf:"varint,13,opt,name=TotalSections,proto3" json:"TotalSections,omitempty"`
-	TotalLectures int32                    `protobuf:"varint,14,opt,name=TotalLectures,proto3" json:"TotalLectures,omitempty"`
-	TotalLength   string                   `protobuf:"bytes,15,opt,name=TotalLength,proto3" json:"TotalLength,omitempty"`
-	NumReviews    string                   `protobuf:"bytes,16,opt,name=NumReviews,proto3" json:"NumReviews,omitempty"`
-	AvgRating     string                   `protobuf:"bytes,17,opt,name=AvgRating,proto3" json:"AvgRating,omitempty"`
-	Thumbnail     *Image                   `protobuf:"bytes,18,opt,name=thumbnail,proto3" json:"thumbnail,omitempty"`
-	Instructor    *User_Service.Instructor `protobuf:"bytes,19,opt,name=instructor,proto3" json:"instructor,omitempty"`
+	Id            string           `protobuf:"bytes,1,opt,name=id,proto3" json:"id,omitempty"`
+	Title         string           `protobuf:"bytes,2,opt,name=title,proto3" json:"title,omitempty"`
+	SubCategory   string           `protobuf:"bytes,3,opt,name=SubCategory,proto3" json:"SubCategory,omitempty"`
+	Goals         []*Goal          `protobuf:"bytes,4,rep,name=goals,proto3" json:"goals,omitempty"`
+	Requirement   string           `protobuf:"bytes,5,opt,name=requirement,proto3" json:"requirement,omitempty"`
+	Level         string           `protobuf:"bytes,6,opt,name=level,proto3" json:"level,omitempty"`
+	Sections      []*Section       `protobuf:"bytes,7,rep,name=sections,proto3" json:"sections,omitempty"`
+	Description   string           `protobuf:"bytes,8,opt,name=description,proto3" json:"description,omitempty"`
+	Language      string           `protobuf:"bytes,9,opt,name=language,proto3" json:"language,omitempty"`
+	IsPublish     bool             `protobuf:"varint,10,opt,name=isPublish,proto3" json:"isPublish,omitempty"`
+	Discount      *Coupon          `protobuf:"bytes,11,opt,name=discount,proto3" json:"discount,omitempty"`
+	Price         *Price           `protobuf:"bytes,12,opt,name=price,proto3" json:"price,omitempty"`
+	TotalSections int32            `protobuf:"varint,13,opt,name=TotalSections,proto3" json:"TotalSections,omitempty"`
+	TotalLectures int32            `protobuf:"varint,14,opt,name=TotalLectures,proto3" json:"TotalLectures,omitempty"`
+	TotalLength   string           `protobuf:"bytes,15,opt,name=TotalLength,proto3" json:"TotalLength,omitempty"`
+	NumReviews    string           `protobuf:"bytes,16,opt,name=NumReviews,proto3" json:"NumReviews,omitempty"`
+	AvgRating     string           `protobuf:"bytes,17,opt,name=AvgRating,proto3" json:"AvgRating,omitempty"`
+	Thumbnail     *Image           `protobuf:"bytes,18,opt,name=thumbnail,proto3" json:"thumbnail,omitempty"`
+	Instructor    *User.Instructor `protobuf:"bytes,19,opt,name=instructor,proto3" json:"instructor,omitempty"`
 }
 
 func (x *Course) Reset() {
 	*x = Course{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[17]
+		mi := &file_Course_course_proto_msgTypes[17]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1031,7 +1031,7 @@ func (x *Course) String() string {
 func (*Course) ProtoMessage() {}
 
 func (x *Course) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[17]
+	mi := &file_Course_course_proto_msgTypes[17]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1044,7 +1044,7 @@ func (x *Course) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Course.ProtoReflect.Descriptor instead.
 func (*Course) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{17}
+	return file_Course_course_proto_rawDescGZIP(), []int{17}
 }
 
 func (x *Course) GetId() string {
@@ -1173,7 +1173,7 @@ func (x *Course) GetThumbnail() *Image {
 	return nil
 }
 
-func (x *Course) GetInstructor() *User_Service.Instructor {
+func (x *Course) GetInstructor() *User.Instructor {
 	if x != nil {
 		return x.Instructor
 	}
@@ -1193,7 +1193,7 @@ type Coupon struct {
 func (x *Coupon) Reset() {
 	*x = Coupon{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[18]
+		mi := &file_Course_course_proto_msgTypes[18]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1206,7 +1206,7 @@ func (x *Coupon) String() string {
 func (*Coupon) ProtoMessage() {}
 
 func (x *Coupon) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[18]
+	mi := &file_Course_course_proto_msgTypes[18]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1219,7 +1219,7 @@ func (x *Coupon) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Coupon.ProtoReflect.Descriptor instead.
 func (*Coupon) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{18}
+	return file_Course_course_proto_rawDescGZIP(), []int{18}
 }
 
 func (x *Coupon) GetId() string {
@@ -1255,7 +1255,7 @@ type Instructor struct {
 func (x *Instructor) Reset() {
 	*x = Instructor{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[19]
+		mi := &file_Course_course_proto_msgTypes[19]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1268,7 +1268,7 @@ func (x *Instructor) String() string {
 func (*Instructor) ProtoMessage() {}
 
 func (x *Instructor) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[19]
+	mi := &file_Course_course_proto_msgTypes[19]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1281,7 +1281,7 @@ func (x *Instructor) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Instructor.ProtoReflect.Descriptor instead.
 func (*Instructor) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{19}
+	return file_Course_course_proto_rawDescGZIP(), []int{19}
 }
 
 func (x *Instructor) GetId() string {
@@ -1311,7 +1311,7 @@ type Price struct {
 func (x *Price) Reset() {
 	*x = Price{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[20]
+		mi := &file_Course_course_proto_msgTypes[20]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1324,7 +1324,7 @@ func (x *Price) String() string {
 func (*Price) ProtoMessage() {}
 
 func (x *Price) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[20]
+	mi := &file_Course_course_proto_msgTypes[20]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1337,7 +1337,7 @@ func (x *Price) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Price.ProtoReflect.Descriptor instead.
 func (*Price) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{20}
+	return file_Course_course_proto_rawDescGZIP(), []int{20}
 }
 
 func (x *Price) GetId() string {
@@ -1374,7 +1374,7 @@ type Link struct {
 func (x *Link) Reset() {
 	*x = Link{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[21]
+		mi := &file_Course_course_proto_msgTypes[21]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1387,7 +1387,7 @@ func (x *Link) String() string {
 func (*Link) ProtoMessage() {}
 
 func (x *Link) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[21]
+	mi := &file_Course_course_proto_msgTypes[21]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1400,7 +1400,7 @@ func (x *Link) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Link.ProtoReflect.Descriptor instead.
 func (*Link) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{21}
+	return file_Course_course_proto_rawDescGZIP(), []int{21}
 }
 
 func (x *Link) GetHref() string {
@@ -1436,7 +1436,7 @@ type GetCoursesRequest struct {
 func (x *GetCoursesRequest) Reset() {
 	*x = GetCoursesRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[22]
+		mi := &file_Course_course_proto_msgTypes[22]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1449,7 +1449,7 @@ func (x *GetCoursesRequest) String() string {
 func (*GetCoursesRequest) ProtoMessage() {}
 
 func (x *GetCoursesRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[22]
+	mi := &file_Course_course_proto_msgTypes[22]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1462,7 +1462,7 @@ func (x *GetCoursesRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetCoursesRequest.ProtoReflect.Descriptor instead.
 func (*GetCoursesRequest) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{22}
+	return file_Course_course_proto_rawDescGZIP(), []int{22}
 }
 
 func (x *GetCoursesRequest) GetPage() int32 {
@@ -1494,7 +1494,7 @@ type GetCoursesResponse struct {
 func (x *GetCoursesResponse) Reset() {
 	*x = GetCoursesResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[23]
+		mi := &file_Course_course_proto_msgTypes[23]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1507,7 +1507,7 @@ func (x *GetCoursesResponse) String() string {
 func (*GetCoursesResponse) ProtoMessage() {}
 
 func (x *GetCoursesResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[23]
+	mi := &file_Course_course_proto_msgTypes[23]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1520,7 +1520,7 @@ func (x *GetCoursesResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetCoursesResponse.ProtoReflect.Descriptor instead.
 func (*GetCoursesResponse) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{23}
+	return file_Course_course_proto_rawDescGZIP(), []int{23}
 }
 
 func (x *GetCoursesResponse) GetLinks() []*Link {
@@ -1569,7 +1569,7 @@ type GetCourseRequest struct {
 func (x *GetCourseRequest) Reset() {
 	*x = GetCourseRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[24]
+		mi := &file_Course_course_proto_msgTypes[24]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1582,7 +1582,7 @@ func (x *GetCourseRequest) String() string {
 func (*GetCourseRequest) ProtoMessage() {}
 
 func (x *GetCourseRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[24]
+	mi := &file_Course_course_proto_msgTypes[24]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1595,7 +1595,7 @@ func (x *GetCourseRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetCourseRequest.ProtoReflect.Descriptor instead.
 func (*GetCourseRequest) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{24}
+	return file_Course_course_proto_rawDescGZIP(), []int{24}
 }
 
 func (x *GetCourseRequest) GetId() string {
@@ -1617,7 +1617,7 @@ type GetCourseResponse struct {
 func (x *GetCourseResponse) Reset() {
 	*x = GetCourseResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[25]
+		mi := &file_Course_course_proto_msgTypes[25]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1630,7 +1630,7 @@ func (x *GetCourseResponse) String() string {
 func (*GetCourseResponse) ProtoMessage() {}
 
 func (x *GetCourseResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[25]
+	mi := &file_Course_course_proto_msgTypes[25]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1643,7 +1643,7 @@ func (x *GetCourseResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetCourseResponse.ProtoReflect.Descriptor instead.
 func (*GetCourseResponse) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{25}
+	return file_Course_course_proto_rawDescGZIP(), []int{25}
 }
 
 func (x *GetCourseResponse) GetCourse() *Course {
@@ -1673,7 +1673,7 @@ type Category struct {
 func (x *Category) Reset() {
 	*x = Category{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[26]
+		mi := &file_Course_course_proto_msgTypes[26]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1686,7 +1686,7 @@ func (x *Category) String() string {
 func (*Category) ProtoMessage() {}
 
 func (x *Category) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[26]
+	mi := &file_Course_course_proto_msgTypes[26]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1699,7 +1699,7 @@ func (x *Category) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Category.ProtoReflect.Descriptor instead.
 func (*Category) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{26}
+	return file_Course_course_proto_rawDescGZIP(), []int{26}
 }
 
 func (x *Category) GetId() string {
@@ -1736,7 +1736,7 @@ type SubCategory struct {
 func (x *SubCategory) Reset() {
 	*x = SubCategory{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[27]
+		mi := &file_Course_course_proto_msgTypes[27]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1749,7 +1749,7 @@ func (x *SubCategory) String() string {
 func (*SubCategory) ProtoMessage() {}
 
 func (x *SubCategory) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[27]
+	mi := &file_Course_course_proto_msgTypes[27]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1762,7 +1762,7 @@ func (x *SubCategory) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SubCategory.ProtoReflect.Descriptor instead.
 func (*SubCategory) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{27}
+	return file_Course_course_proto_rawDescGZIP(), []int{27}
 }
 
 func (x *SubCategory) GetId() string {
@@ -1795,7 +1795,7 @@ type GetAllCategoriesRequest struct {
 func (x *GetAllCategoriesRequest) Reset() {
 	*x = GetAllCategoriesRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[28]
+		mi := &file_Course_course_proto_msgTypes[28]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1808,7 +1808,7 @@ func (x *GetAllCategoriesRequest) String() string {
 func (*GetAllCategoriesRequest) ProtoMessage() {}
 
 func (x *GetAllCategoriesRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[28]
+	mi := &file_Course_course_proto_msgTypes[28]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1821,7 +1821,7 @@ func (x *GetAllCategoriesRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetAllCategoriesRequest.ProtoReflect.Descriptor instead.
 func (*GetAllCategoriesRequest) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{28}
+	return file_Course_course_proto_rawDescGZIP(), []int{28}
 }
 
 type GetAllCategoriesResponse struct {
@@ -1836,7 +1836,7 @@ type GetAllCategoriesResponse struct {
 func (x *GetAllCategoriesResponse) Reset() {
 	*x = GetAllCategoriesResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[29]
+		mi := &file_Course_course_proto_msgTypes[29]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1849,7 +1849,7 @@ func (x *GetAllCategoriesResponse) String() string {
 func (*GetAllCategoriesResponse) ProtoMessage() {}
 
 func (x *GetAllCategoriesResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[29]
+	mi := &file_Course_course_proto_msgTypes[29]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1862,7 +1862,7 @@ func (x *GetAllCategoriesResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetAllCategoriesResponse.ProtoReflect.Descriptor instead.
 func (*GetAllCategoriesResponse) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{29}
+	return file_Course_course_proto_rawDescGZIP(), []int{29}
 }
 
 func (x *GetAllCategoriesResponse) GetCategories() []*Category {
@@ -1891,7 +1891,7 @@ type EnrollmentRequest struct {
 func (x *EnrollmentRequest) Reset() {
 	*x = EnrollmentRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[30]
+		mi := &file_Course_course_proto_msgTypes[30]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1904,7 +1904,7 @@ func (x *EnrollmentRequest) String() string {
 func (*EnrollmentRequest) ProtoMessage() {}
 
 func (x *EnrollmentRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[30]
+	mi := &file_Course_course_proto_msgTypes[30]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1917,7 +1917,7 @@ func (x *EnrollmentRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use EnrollmentRequest.ProtoReflect.Descriptor instead.
 func (*EnrollmentRequest) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{30}
+	return file_Course_course_proto_rawDescGZIP(), []int{30}
 }
 
 func (x *EnrollmentRequest) GetUserId() string {
@@ -1945,7 +1945,7 @@ type EnrollmentResponse struct {
 func (x *EnrollmentResponse) Reset() {
 	*x = EnrollmentResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[31]
+		mi := &file_Course_course_proto_msgTypes[31]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1958,7 +1958,7 @@ func (x *EnrollmentResponse) String() string {
 func (*EnrollmentResponse) ProtoMessage() {}
 
 func (x *EnrollmentResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[31]
+	mi := &file_Course_course_proto_msgTypes[31]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1971,7 +1971,7 @@ func (x *EnrollmentResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use EnrollmentResponse.ProtoReflect.Descriptor instead.
 func (*EnrollmentResponse) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{31}
+	return file_Course_course_proto_rawDescGZIP(), []int{31}
 }
 
 func (x *EnrollmentResponse) GetError() *Error.ErrorResponse {
@@ -1993,7 +1993,7 @@ type GetCourseContentRequest struct {
 func (x *GetCourseContentRequest) Reset() {
 	*x = GetCourseContentRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[32]
+		mi := &file_Course_course_proto_msgTypes[32]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2006,7 +2006,7 @@ func (x *GetCourseContentRequest) String() string {
 func (*GetCourseContentRequest) ProtoMessage() {}
 
 func (x *GetCourseContentRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[32]
+	mi := &file_Course_course_proto_msgTypes[32]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2019,7 +2019,7 @@ func (x *GetCourseContentRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetCourseContentRequest.ProtoReflect.Descriptor instead.
 func (*GetCourseContentRequest) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{32}
+	return file_Course_course_proto_rawDescGZIP(), []int{32}
 }
 
 func (x *GetCourseContentRequest) GetUserId() string {
@@ -2048,7 +2048,7 @@ type GetCourseContentResponse struct {
 func (x *GetCourseContentResponse) Reset() {
 	*x = GetCourseContentResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[33]
+		mi := &file_Course_course_proto_msgTypes[33]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2061,7 +2061,7 @@ func (x *GetCourseContentResponse) String() string {
 func (*GetCourseContentResponse) ProtoMessage() {}
 
 func (x *GetCourseContentResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[33]
+	mi := &file_Course_course_proto_msgTypes[33]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2074,7 +2074,7 @@ func (x *GetCourseContentResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetCourseContentResponse.ProtoReflect.Descriptor instead.
 func (*GetCourseContentResponse) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{33}
+	return file_Course_course_proto_rawDescGZIP(), []int{33}
 }
 
 func (x *GetCourseContentResponse) GetCourse() *Course {
@@ -2102,7 +2102,7 @@ type GetEnrollmentsRequest struct {
 func (x *GetEnrollmentsRequest) Reset() {
 	*x = GetEnrollmentsRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[34]
+		mi := &file_Course_course_proto_msgTypes[34]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2115,7 +2115,7 @@ func (x *GetEnrollmentsRequest) String() string {
 func (*GetEnrollmentsRequest) ProtoMessage() {}
 
 func (x *GetEnrollmentsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[34]
+	mi := &file_Course_course_proto_msgTypes[34]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2128,7 +2128,7 @@ func (x *GetEnrollmentsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetEnrollmentsRequest.ProtoReflect.Descriptor instead.
 func (*GetEnrollmentsRequest) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{34}
+	return file_Course_course_proto_rawDescGZIP(), []int{34}
 }
 
 func (x *GetEnrollmentsRequest) GetUserId() string {
@@ -2151,7 +2151,7 @@ type Enrollment struct {
 func (x *Enrollment) Reset() {
 	*x = Enrollment{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[35]
+		mi := &file_Course_course_proto_msgTypes[35]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2164,7 +2164,7 @@ func (x *Enrollment) String() string {
 func (*Enrollment) ProtoMessage() {}
 
 func (x *Enrollment) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[35]
+	mi := &file_Course_course_proto_msgTypes[35]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2177,7 +2177,7 @@ func (x *Enrollment) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Enrollment.ProtoReflect.Descriptor instead.
 func (*Enrollment) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{35}
+	return file_Course_course_proto_rawDescGZIP(), []int{35}
 }
 
 func (x *Enrollment) GetCourseId() string {
@@ -2213,7 +2213,7 @@ type GetEnrollmentsResponse struct {
 func (x *GetEnrollmentsResponse) Reset() {
 	*x = GetEnrollmentsResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[36]
+		mi := &file_Course_course_proto_msgTypes[36]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2226,7 +2226,7 @@ func (x *GetEnrollmentsResponse) String() string {
 func (*GetEnrollmentsResponse) ProtoMessage() {}
 
 func (x *GetEnrollmentsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[36]
+	mi := &file_Course_course_proto_msgTypes[36]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2239,7 +2239,7 @@ func (x *GetEnrollmentsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetEnrollmentsResponse.ProtoReflect.Descriptor instead.
 func (*GetEnrollmentsResponse) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{36}
+	return file_Course_course_proto_rawDescGZIP(), []int{36}
 }
 
 func (x *GetEnrollmentsResponse) GetEnrollments() []*Enrollment {
@@ -2267,7 +2267,7 @@ type UpdateCourseResponse struct {
 func (x *UpdateCourseResponse) Reset() {
 	*x = UpdateCourseResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[37]
+		mi := &file_Course_course_proto_msgTypes[37]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2280,7 +2280,7 @@ func (x *UpdateCourseResponse) String() string {
 func (*UpdateCourseResponse) ProtoMessage() {}
 
 func (x *UpdateCourseResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[37]
+	mi := &file_Course_course_proto_msgTypes[37]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2293,7 +2293,7 @@ func (x *UpdateCourseResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateCourseResponse.ProtoReflect.Descriptor instead.
 func (*UpdateCourseResponse) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{37}
+	return file_Course_course_proto_rawDescGZIP(), []int{37}
 }
 
 func (x *UpdateCourseResponse) GetError() *Error.ErrorResponse {
@@ -2326,7 +2326,7 @@ type UpdateCourseRequest struct {
 func (x *UpdateCourseRequest) Reset() {
 	*x = UpdateCourseRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[38]
+		mi := &file_Course_course_proto_msgTypes[38]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2339,7 +2339,7 @@ func (x *UpdateCourseRequest) String() string {
 func (*UpdateCourseRequest) ProtoMessage() {}
 
 func (x *UpdateCourseRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[38]
+	mi := &file_Course_course_proto_msgTypes[38]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2352,7 +2352,7 @@ func (x *UpdateCourseRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateCourseRequest.ProtoReflect.Descriptor instead.
 func (*UpdateCourseRequest) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{38}
+	return file_Course_course_proto_rawDescGZIP(), []int{38}
 }
 
 func (x *UpdateCourseRequest) GetTitle() string {
@@ -2459,7 +2459,7 @@ type CreateCourseRequest struct {
 func (x *CreateCourseRequest) Reset() {
 	*x = CreateCourseRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[39]
+		mi := &file_Course_course_proto_msgTypes[39]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2472,7 +2472,7 @@ func (x *CreateCourseRequest) String() string {
 func (*CreateCourseRequest) ProtoMessage() {}
 
 func (x *CreateCourseRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[39]
+	mi := &file_Course_course_proto_msgTypes[39]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2485,7 +2485,7 @@ func (x *CreateCourseRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateCourseRequest.ProtoReflect.Descriptor instead.
 func (*CreateCourseRequest) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{39}
+	return file_Course_course_proto_rawDescGZIP(), []int{39}
 }
 
 func (x *CreateCourseRequest) GetTitle() string {
@@ -2521,7 +2521,7 @@ type CreateCourseResponse struct {
 func (x *CreateCourseResponse) Reset() {
 	*x = CreateCourseResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[40]
+		mi := &file_Course_course_proto_msgTypes[40]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2534,7 +2534,7 @@ func (x *CreateCourseResponse) String() string {
 func (*CreateCourseResponse) ProtoMessage() {}
 
 func (x *CreateCourseResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[40]
+	mi := &file_Course_course_proto_msgTypes[40]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2547,7 +2547,7 @@ func (x *CreateCourseResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateCourseResponse.ProtoReflect.Descriptor instead.
 func (*CreateCourseResponse) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{40}
+	return file_Course_course_proto_rawDescGZIP(), []int{40}
 }
 
 func (x *CreateCourseResponse) GetCourseId() string {
@@ -2573,7 +2573,7 @@ type GetPricesRequest struct {
 func (x *GetPricesRequest) Reset() {
 	*x = GetPricesRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[41]
+		mi := &file_Course_course_proto_msgTypes[41]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2586,7 +2586,7 @@ func (x *GetPricesRequest) String() string {
 func (*GetPricesRequest) ProtoMessage() {}
 
 func (x *GetPricesRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[41]
+	mi := &file_Course_course_proto_msgTypes[41]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2599,7 +2599,7 @@ func (x *GetPricesRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetPricesRequest.ProtoReflect.Descriptor instead.
 func (*GetPricesRequest) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{41}
+	return file_Course_course_proto_rawDescGZIP(), []int{41}
 }
 
 type GetPricesResponse struct {
@@ -2614,7 +2614,7 @@ type GetPricesResponse struct {
 func (x *GetPricesResponse) Reset() {
 	*x = GetPricesResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[42]
+		mi := &file_Course_course_proto_msgTypes[42]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2627,7 +2627,7 @@ func (x *GetPricesResponse) String() string {
 func (*GetPricesResponse) ProtoMessage() {}
 
 func (x *GetPricesResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[42]
+	mi := &file_Course_course_proto_msgTypes[42]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2640,7 +2640,7 @@ func (x *GetPricesResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetPricesResponse.ProtoReflect.Descriptor instead.
 func (*GetPricesResponse) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{42}
+	return file_Course_course_proto_rawDescGZIP(), []int{42}
 }
 
 func (x *GetPricesResponse) GetPrices() []*Price {
@@ -2669,7 +2669,7 @@ type PublishCourseRequest struct {
 func (x *PublishCourseRequest) Reset() {
 	*x = PublishCourseRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[43]
+		mi := &file_Course_course_proto_msgTypes[43]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2682,7 +2682,7 @@ func (x *PublishCourseRequest) String() string {
 func (*PublishCourseRequest) ProtoMessage() {}
 
 func (x *PublishCourseRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[43]
+	mi := &file_Course_course_proto_msgTypes[43]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2695,7 +2695,7 @@ func (x *PublishCourseRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PublishCourseRequest.ProtoReflect.Descriptor instead.
 func (*PublishCourseRequest) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{43}
+	return file_Course_course_proto_rawDescGZIP(), []int{43}
 }
 
 func (x *PublishCourseRequest) GetCourseId() string {
@@ -2724,7 +2724,7 @@ type PublishCourseResponse struct {
 func (x *PublishCourseResponse) Reset() {
 	*x = PublishCourseResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[44]
+		mi := &file_Course_course_proto_msgTypes[44]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2737,7 +2737,7 @@ func (x *PublishCourseResponse) String() string {
 func (*PublishCourseResponse) ProtoMessage() {}
 
 func (x *PublishCourseResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[44]
+	mi := &file_Course_course_proto_msgTypes[44]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2750,7 +2750,7 @@ func (x *PublishCourseResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PublishCourseResponse.ProtoReflect.Descriptor instead.
 func (*PublishCourseResponse) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{44}
+	return file_Course_course_proto_rawDescGZIP(), []int{44}
 }
 
 func (x *PublishCourseResponse) GetErrorsValidate() []string {
@@ -2778,7 +2778,7 @@ type GetCourseWithInstructorRequest struct {
 func (x *GetCourseWithInstructorRequest) Reset() {
 	*x = GetCourseWithInstructorRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[45]
+		mi := &file_Course_course_proto_msgTypes[45]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2791,7 +2791,7 @@ func (x *GetCourseWithInstructorRequest) String() string {
 func (*GetCourseWithInstructorRequest) ProtoMessage() {}
 
 func (x *GetCourseWithInstructorRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[45]
+	mi := &file_Course_course_proto_msgTypes[45]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2804,7 +2804,7 @@ func (x *GetCourseWithInstructorRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetCourseWithInstructorRequest.ProtoReflect.Descriptor instead.
 func (*GetCourseWithInstructorRequest) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{45}
+	return file_Course_course_proto_rawDescGZIP(), []int{45}
 }
 
 func (x *GetCourseWithInstructorRequest) GetUserId() string {
@@ -2826,7 +2826,7 @@ type GetCourseWithInstructorResponse struct {
 func (x *GetCourseWithInstructorResponse) Reset() {
 	*x = GetCourseWithInstructorResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[46]
+		mi := &file_Course_course_proto_msgTypes[46]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2839,7 +2839,7 @@ func (x *GetCourseWithInstructorResponse) String() string {
 func (*GetCourseWithInstructorResponse) ProtoMessage() {}
 
 func (x *GetCourseWithInstructorResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[46]
+	mi := &file_Course_course_proto_msgTypes[46]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2852,7 +2852,7 @@ func (x *GetCourseWithInstructorResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetCourseWithInstructorResponse.ProtoReflect.Descriptor instead.
 func (*GetCourseWithInstructorResponse) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{46}
+	return file_Course_course_proto_rawDescGZIP(), []int{46}
 }
 
 func (x *GetCourseWithInstructorResponse) GetCourses() []*Course {
@@ -2881,7 +2881,7 @@ type DeleteCourseRequest struct {
 func (x *DeleteCourseRequest) Reset() {
 	*x = DeleteCourseRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[47]
+		mi := &file_Course_course_proto_msgTypes[47]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2894,7 +2894,7 @@ func (x *DeleteCourseRequest) String() string {
 func (*DeleteCourseRequest) ProtoMessage() {}
 
 func (x *DeleteCourseRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[47]
+	mi := &file_Course_course_proto_msgTypes[47]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2907,7 +2907,7 @@ func (x *DeleteCourseRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DeleteCourseRequest.ProtoReflect.Descriptor instead.
 func (*DeleteCourseRequest) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{47}
+	return file_Course_course_proto_rawDescGZIP(), []int{47}
 }
 
 func (x *DeleteCourseRequest) GetCourseId() string {
@@ -2935,7 +2935,7 @@ type DeleteCourseResponse struct {
 func (x *DeleteCourseResponse) Reset() {
 	*x = DeleteCourseResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_Course_Service_course_proto_msgTypes[48]
+		mi := &file_Course_course_proto_msgTypes[48]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2948,7 +2948,7 @@ func (x *DeleteCourseResponse) String() string {
 func (*DeleteCourseResponse) ProtoMessage() {}
 
 func (x *DeleteCourseResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Course_Service_course_proto_msgTypes[48]
+	mi := &file_Course_course_proto_msgTypes[48]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2961,7 +2961,7 @@ func (x *DeleteCourseResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DeleteCourseResponse.ProtoReflect.Descriptor instead.
 func (*DeleteCourseResponse) Descriptor() ([]byte, []int) {
-	return file_Course_Service_course_proto_rawDescGZIP(), []int{48}
+	return file_Course_course_proto_rawDescGZIP(), []int{48}
 }
 
 func (x *DeleteCourseResponse) GetError() *Error.ErrorResponse {
@@ -2971,13 +2971,12 @@ func (x *DeleteCourseResponse) GetError() *Error.ErrorResponse {
 	return nil
 }
 
-var File_Course_Service_course_proto protoreflect.FileDescriptor
+var File_Course_course_proto protoreflect.FileDescriptor
 
-var file_Course_Service_course_proto_rawDesc = []byte{
-	0x0a, 0x1b, 0x43, 0x6f, 0x75, 0x72, 0x73, 0x65, 0x2d, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65,
-	0x2f, 0x63, 0x6f, 0x75, 0x72, 0x73, 0x65, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x06, 0x63,
-	0x6f, 0x75, 0x72, 0x73, 0x65, 0x1a, 0x17, 0x55, 0x73, 0x65, 0x72, 0x2d, 0x53, 0x65, 0x72, 0x76,
-	0x69, 0x63, 0x65, 0x2f, 0x75, 0x73, 0x65, 0x72, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x1a, 0x11,
+var file_Course_course_proto_rawDesc = []byte{
+	0x0a, 0x13, 0x43, 0x6f, 0x75, 0x72, 0x73, 0x65, 0x2f, 0x63, 0x6f, 0x75, 0x72, 0x73, 0x65, 0x2e,
+	0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x06, 0x63, 0x6f, 0x75, 0x72, 0x73, 0x65, 0x1a, 0x0f, 0x55,
+	0x73, 0x65, 0x72, 0x2f, 0x75, 0x73, 0x65, 0x72, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x1a, 0x11,
 	0x45, 0x72, 0x72, 0x6f, 0x72, 0x2f, 0x65, 0x72, 0x72, 0x6f, 0x72, 0x2e, 0x70, 0x72, 0x6f, 0x74,
 	0x6f, 0x22, 0x47, 0x0a, 0x11, 0x43, 0x68, 0x65, 0x63, 0x6b, 0x4f, 0x77, 0x6e, 0x65, 0x72, 0x52,
 	0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x16, 0x0a, 0x06, 0x75, 0x73, 0x65, 0x72, 0x49, 0x64,
@@ -3388,26 +3387,26 @@ var file_Course_Service_course_proto_rawDesc = []byte{
 	0x65, 0x72, 0x12, 0x19, 0x2e, 0x63, 0x6f, 0x75, 0x72, 0x73, 0x65, 0x2e, 0x43, 0x68, 0x65, 0x63,
 	0x6b, 0x4f, 0x77, 0x6e, 0x65, 0x72, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x10, 0x2e,
 	0x63, 0x6f, 0x75, 0x72, 0x73, 0x65, 0x2e, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x42,
-	0x33, 0x5a, 0x31, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x68, 0x6f,
+	0x37, 0x5a, 0x35, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x68, 0x6f,
 	0x61, 0x6e, 0x67, 0x70, 0x68, 0x75, 0x63, 0x32, 0x38, 0x2f, 0x43, 0x6f, 0x75, 0x72, 0x73, 0x65,
-	0x73, 0x4f, 0x6e, 0x6c, 0x69, 0x6e, 0x65, 0x2f, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x2f, 0x63, 0x6f,
-	0x75, 0x72, 0x73, 0x65, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x73, 0x4f, 0x6e, 0x6c, 0x69, 0x6e, 0x65, 0x2d, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x46, 0x69, 0x6c,
+	0x65, 0x2f, 0x43, 0x6f, 0x75, 0x72, 0x73, 0x65, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
-	file_Course_Service_course_proto_rawDescOnce sync.Once
-	file_Course_Service_course_proto_rawDescData = file_Course_Service_course_proto_rawDesc
+	file_Course_course_proto_rawDescOnce sync.Once
+	file_Course_course_proto_rawDescData = file_Course_course_proto_rawDesc
 )
 
-func file_Course_Service_course_proto_rawDescGZIP() []byte {
-	file_Course_Service_course_proto_rawDescOnce.Do(func() {
-		file_Course_Service_course_proto_rawDescData = protoimpl.X.CompressGZIP(file_Course_Service_course_proto_rawDescData)
+func file_Course_course_proto_rawDescGZIP() []byte {
+	file_Course_course_proto_rawDescOnce.Do(func() {
+		file_Course_course_proto_rawDescData = protoimpl.X.CompressGZIP(file_Course_course_proto_rawDescData)
 	})
-	return file_Course_Service_course_proto_rawDescData
+	return file_Course_course_proto_rawDescData
 }
 
-var file_Course_Service_course_proto_msgTypes = make([]protoimpl.MessageInfo, 49)
-var file_Course_Service_course_proto_goTypes = []interface{}{
+var file_Course_course_proto_msgTypes = make([]protoimpl.MessageInfo, 49)
+var file_Course_course_proto_goTypes = []interface{}{
 	(*CheckOwnerRequest)(nil),               // 0: course.CheckOwnerRequest
 	(*DeleteLectureRequest)(nil),            // 1: course.DeleteLectureRequest
 	(*UpdateLectureRequest)(nil),            // 2: course.UpdateLectureRequest
@@ -3458,9 +3457,9 @@ var file_Course_Service_course_proto_goTypes = []interface{}{
 	(*DeleteCourseRequest)(nil),             // 47: course.DeleteCourseRequest
 	(*DeleteCourseResponse)(nil),            // 48: course.DeleteCourseResponse
 	(*Error.ErrorResponse)(nil),             // 49: err.ErrorResponse
-	(*User_Service.Instructor)(nil),         // 50: user.Instructor
+	(*User.Instructor)(nil),                 // 50: user.Instructor
 }
-var file_Course_Service_course_proto_depIdxs = []int32{
+var file_Course_course_proto_depIdxs = []int32{
 	13, // 0: course.UpdateLectureRequest.resource:type_name -> course.Resource
 	49, // 1: course.CreateLectureResponse.error:type_name -> err.ErrorResponse
 	15, // 2: course.GetSectionsResponse.sections:type_name -> course.Section
@@ -3546,13 +3545,13 @@ var file_Course_Service_course_proto_depIdxs = []int32{
 	0,  // [0:38] is the sub-list for field type_name
 }
 
-func init() { file_Course_Service_course_proto_init() }
-func file_Course_Service_course_proto_init() {
-	if File_Course_Service_course_proto != nil {
+func init() { file_Course_course_proto_init() }
+func file_Course_course_proto_init() {
+	if File_Course_course_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_Course_Service_course_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*CheckOwnerRequest); i {
 			case 0:
 				return &v.state
@@ -3564,7 +3563,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*DeleteLectureRequest); i {
 			case 0:
 				return &v.state
@@ -3576,7 +3575,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*UpdateLectureRequest); i {
 			case 0:
 				return &v.state
@@ -3588,7 +3587,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*CreateLectureRequest); i {
 			case 0:
 				return &v.state
@@ -3600,7 +3599,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*CreateLectureResponse); i {
 			case 0:
 				return &v.state
@@ -3612,7 +3611,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*GetSectionsRequest); i {
 			case 0:
 				return &v.state
@@ -3624,7 +3623,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*GetSectionsResponse); i {
 			case 0:
 				return &v.state
@@ -3636,7 +3635,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*DeleteSectionRequest); i {
 			case 0:
 				return &v.state
@@ -3648,7 +3647,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*UpdateSectionRequest); i {
 			case 0:
 				return &v.state
@@ -3660,7 +3659,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*CreateSectionRequest); i {
 			case 0:
 				return &v.state
@@ -3672,7 +3671,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*CreateSectionResponse); i {
 			case 0:
 				return &v.state
@@ -3684,7 +3683,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Response); i {
 			case 0:
 				return &v.state
@@ -3696,7 +3695,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Image); i {
 			case 0:
 				return &v.state
@@ -3708,7 +3707,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Resource); i {
 			case 0:
 				return &v.state
@@ -3720,7 +3719,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Lecture); i {
 			case 0:
 				return &v.state
@@ -3732,7 +3731,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Section); i {
 			case 0:
 				return &v.state
@@ -3744,7 +3743,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[16].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[16].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Goal); i {
 			case 0:
 				return &v.state
@@ -3756,7 +3755,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[17].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[17].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Course); i {
 			case 0:
 				return &v.state
@@ -3768,7 +3767,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[18].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[18].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Coupon); i {
 			case 0:
 				return &v.state
@@ -3780,7 +3779,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[19].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[19].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Instructor); i {
 			case 0:
 				return &v.state
@@ -3792,7 +3791,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[20].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[20].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Price); i {
 			case 0:
 				return &v.state
@@ -3804,7 +3803,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[21].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[21].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Link); i {
 			case 0:
 				return &v.state
@@ -3816,7 +3815,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[22].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[22].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*GetCoursesRequest); i {
 			case 0:
 				return &v.state
@@ -3828,7 +3827,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[23].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[23].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*GetCoursesResponse); i {
 			case 0:
 				return &v.state
@@ -3840,7 +3839,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[24].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[24].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*GetCourseRequest); i {
 			case 0:
 				return &v.state
@@ -3852,7 +3851,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[25].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[25].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*GetCourseResponse); i {
 			case 0:
 				return &v.state
@@ -3864,7 +3863,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[26].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[26].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Category); i {
 			case 0:
 				return &v.state
@@ -3876,7 +3875,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[27].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[27].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*SubCategory); i {
 			case 0:
 				return &v.state
@@ -3888,7 +3887,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[28].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[28].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*GetAllCategoriesRequest); i {
 			case 0:
 				return &v.state
@@ -3900,7 +3899,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[29].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[29].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*GetAllCategoriesResponse); i {
 			case 0:
 				return &v.state
@@ -3912,7 +3911,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[30].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[30].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*EnrollmentRequest); i {
 			case 0:
 				return &v.state
@@ -3924,7 +3923,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[31].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[31].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*EnrollmentResponse); i {
 			case 0:
 				return &v.state
@@ -3936,7 +3935,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[32].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[32].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*GetCourseContentRequest); i {
 			case 0:
 				return &v.state
@@ -3948,7 +3947,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[33].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[33].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*GetCourseContentResponse); i {
 			case 0:
 				return &v.state
@@ -3960,7 +3959,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[34].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[34].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*GetEnrollmentsRequest); i {
 			case 0:
 				return &v.state
@@ -3972,7 +3971,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[35].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[35].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Enrollment); i {
 			case 0:
 				return &v.state
@@ -3984,7 +3983,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[36].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[36].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*GetEnrollmentsResponse); i {
 			case 0:
 				return &v.state
@@ -3996,7 +3995,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[37].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[37].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*UpdateCourseResponse); i {
 			case 0:
 				return &v.state
@@ -4008,7 +4007,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[38].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[38].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*UpdateCourseRequest); i {
 			case 0:
 				return &v.state
@@ -4020,7 +4019,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[39].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[39].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*CreateCourseRequest); i {
 			case 0:
 				return &v.state
@@ -4032,7 +4031,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[40].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[40].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*CreateCourseResponse); i {
 			case 0:
 				return &v.state
@@ -4044,7 +4043,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[41].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[41].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*GetPricesRequest); i {
 			case 0:
 				return &v.state
@@ -4056,7 +4055,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[42].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[42].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*GetPricesResponse); i {
 			case 0:
 				return &v.state
@@ -4068,7 +4067,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[43].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[43].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*PublishCourseRequest); i {
 			case 0:
 				return &v.state
@@ -4080,7 +4079,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[44].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[44].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*PublishCourseResponse); i {
 			case 0:
 				return &v.state
@@ -4092,7 +4091,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[45].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[45].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*GetCourseWithInstructorRequest); i {
 			case 0:
 				return &v.state
@@ -4104,7 +4103,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[46].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[46].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*GetCourseWithInstructorResponse); i {
 			case 0:
 				return &v.state
@@ -4116,7 +4115,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[47].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[47].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*DeleteCourseRequest); i {
 			case 0:
 				return &v.state
@@ -4128,7 +4127,7 @@ func file_Course_Service_course_proto_init() {
 				return nil
 			}
 		}
-		file_Course_Service_course_proto_msgTypes[48].Exporter = func(v interface{}, i int) interface{} {
+		file_Course_course_proto_msgTypes[48].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*DeleteCourseResponse); i {
 			case 0:
 				return &v.state
@@ -4145,18 +4144,18 @@ func file_Course_Service_course_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_Course_Service_course_proto_rawDesc,
+			RawDescriptor: file_Course_course_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   49,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_Course_Service_course_proto_goTypes,
-		DependencyIndexes: file_Course_Service_course_proto_depIdxs,
-		MessageInfos:      file_Course_Service_course_proto_msgTypes,
+		GoTypes:           file_Course_course_proto_goTypes,
+		DependencyIndexes: file_Course_course_proto_depIdxs,
+		MessageInfos:      file_Course_course_proto_msgTypes,
 	}.Build()
-	File_Course_Service_course_proto = out.File
-	file_Course_Service_course_proto_rawDesc = nil
-	file_Course_Service_course_proto_goTypes = nil
-	file_Course_Service_course_proto_depIdxs = nil
+	File_Course_course_proto = out.File
+	file_Course_course_proto_rawDesc = nil
+	file_Course_course_proto_goTypes = nil
+	file_Course_course_proto_depIdxs = nil
 }
