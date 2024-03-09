@@ -20,6 +20,7 @@ service CourseService {
   rpc GetCourseWithInstructor(GetCourseWithInstructorRequest) returns (GetCourseWithInstructorResponse);
   rpc DeleteCourse(DeleteCourseRequest) returns (DeleteCourseResponse);
   rpc FilterCourses(FilterRequest) returns(GetCoursesResponse);
+  rpc SearchCourses(SearchRequest) returns (GetCoursesResponse);
 
   //Section service
   rpc CreateSection(CreateSectionRequest) returns (CreateSectionResponse);
@@ -35,6 +36,8 @@ service CourseService {
 
   rpc CheckOwner(CheckOwnerRequest) returns (Response);
 }
+
+
 message CheckOwnerRequest {
   string userId = 1;
   string courseId = 2;

@@ -36,6 +36,7 @@ type CourseServiceClient interface {
 	GetCourseWithInstructor(ctx context.Context, in *GetCourseWithInstructorRequest, opts ...grpc.CallOption) (*GetCourseWithInstructorResponse, error)
 	DeleteCourse(ctx context.Context, in *DeleteCourseRequest, opts ...grpc.CallOption) (*DeleteCourseResponse, error)
 	FilterCourses(ctx context.Context, in *FilterRequest, opts ...grpc.CallOption) (*GetCoursesResponse, error)
+	SearchCourses(ctx context.Context, in *SearchRequest, opts ...grpc.CallOption) (*GetCoursesResponse, error)
 	// Section service
 	CreateSection(ctx context.Context, in *CreateSectionRequest, opts ...grpc.CallOption) (*CreateSectionResponse, error)
 	UpdateSection(ctx context.Context, in *UpdateSectionRequest, opts ...grpc.CallOption) (*Response, error)
@@ -173,6 +174,15 @@ func (c *courseServiceClient) FilterCourses(ctx context.Context, in *FilterReque
 	return out, nil
 }
 
+func (c *courseServiceClient) SearchCourses(ctx context.Context, in *SearchRequest, opts ...grpc.CallOption) (*GetCoursesResponse, error) {
+	out := new(GetCoursesResponse)
+	err := c.cc.Invoke(ctx, "/course.CourseService/SearchCourses", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 func (c *courseServiceClient) CreateSection(ctx context.Context, in *CreateSectionRequest, opts ...grpc.CallOption) (*CreateSectionResponse, error) {
 	out := new(CreateSectionResponse)
 	err := c.cc.Invoke(ctx, "/course.CourseService/CreateSection", in, out, opts...)
@@ -263,6 +273,7 @@ type CourseServiceServer interface {
 	GetCourseWithInstructor(context.Context, *GetCourseWithInstructorRequest) (*GetCourseWithInstructorResponse, error)
 	DeleteCourse(context.Context, *DeleteCourseRequest) (*DeleteCourseResponse, error)
 	FilterCourses(context.Context, *FilterRequest) (*GetCoursesResponse, error)
+	SearchCourses(context.Context, *SearchRequest) (*GetCoursesResponse, error)
 	// Section service
 	CreateSection(context.Context, *CreateSectionRequest) (*CreateSectionResponse, error)
 	UpdateSection(context.Context, *UpdateSectionRequest) (*Response, error)
@@ -318,6 +329,9 @@ func (UnimplementedCourseServiceServer) DeleteCourse(context.Context, *DeleteCou
 }
 func (UnimplementedCourseServiceServer) FilterCourses(context.Context, *FilterRequest) (*GetCoursesResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method FilterCourses not implemented")
+}
+func (UnimplementedCourseServiceServer) SearchCourses(context.Context, *SearchRequest) (*GetCoursesResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method SearchCourses not implemented")
 }
 func (UnimplementedCourseServiceServer) CreateSection(context.Context, *CreateSectionRequest) (*CreateSectionResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateSection not implemented")
@@ -590,6 +604,24 @@ func _CourseService_FilterCourses_Handler(srv interface{}, ctx context.Context, 
 	return interceptor(ctx, in, info, handler)
 }
 
+func _CourseService_SearchCourses_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(SearchRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(CourseServiceServer).SearchCourses(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/course.CourseService/SearchCourses",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(CourseServiceServer).SearchCourses(ctx, req.(*SearchRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 func _CourseService_CreateSection_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(CreateSectionRequest)
 	if err := dec(in); err != nil {
@@ -792,6 +824,10 @@ var CourseService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "FilterCourses",
 			Handler:    _CourseService_FilterCourses_Handler,
+		},
+		{
+			MethodName: "SearchCourses",
+			Handler:    _CourseService_SearchCourses_Handler,
 		},
 		{
 			MethodName: "CreateSection",
